@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.collectorCompletedJobsController">
+    <children>
+        <TableView fx:id="selectedTestTable" layoutY="84.0" prefHeight="405.0" prefWidth="800.0">
+            <columns>
+                <TableColumn fx:id="testName" prefWidth="81.60000610351562" text="Test Name" />
+                <TableColumn fx:id="patientContactNumber" prefWidth="155.199951171875" text="Patient Contact Number" />
+                <TableColumn fx:id="patientAddress" prefWidth="139.199951171875" text="Patient Address" />
+                <TableColumn fx:id="packageId" prefWidth="88.00006103515625" text="Package Id" />
+            <TableColumn fx:id="takenDate" prefWidth="100.0" text="Taken Date" />
+            <TableColumn fx:id="submittedDate" prefWidth="122.4000244140625" text="Submitted Date" />
+            <TableColumn fx:id="orderNumber" prefWidth="110.4000244140625" text="Order Number" />
+            </columns>
+        </TableView>
+        <Button layoutX="24.0" layoutY="23.0" mnemonicParsing="false" onAction="#submitSampleOnAction" prefHeight="26.0" prefWidth="65.0" text="BACK" />
+        <Label fx:id="exceptionLabel" layoutX="536.0" layoutY="23.0" prefHeight="26.0" prefWidth="234.0" textFill="#e50a0a">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

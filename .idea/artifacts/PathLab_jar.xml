@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PathLab:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/PathLab_jar</output-path>
+    <root id="archive" name="PathLab.jar">
+      <element id="module-output" name="PathLab" />
+      <element id="extracted-dir" path="F:/2-2/DataBase/PostgreSQL/postgresql-42.2.5.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

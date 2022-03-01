@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.collectorTakenJobTableController">
+   <children>
+      <TableView fx:id="selectedTestTable" layoutY="84.0" prefHeight="405.0" prefWidth="800.0">
+        <columns>
+          <TableColumn fx:id="testName" prefWidth="112.0" text="Test Name" />
+            <TableColumn fx:id="patientContactNumber" prefWidth="174.4000244140625" text="Patient Contact Number" />
+            <TableColumn fx:id="patientAddress" prefWidth="156.0" text="Patient Address" />
+            <TableColumn fx:id="packageId" prefWidth="117.5999755859375" text="Package Id" />
+            <TableColumn fx:id="takenDate" prefWidth="110.39990234375" text="takenDate" />
+            <TableColumn fx:id="orderNumber" prefWidth="128.0" text="Order Number" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backOnAction" text="BACK" />
+      <Button layoutX="374.0" layoutY="514.0" mnemonicParsing="false" onAction="#submitSampleOnAction" text="Submit Sample" />
+      <Label fx:id="exceptionLabel" layoutX="536.0" layoutY="23.0" prefHeight="26.0" prefWidth="234.0" textFill="#e50a0a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

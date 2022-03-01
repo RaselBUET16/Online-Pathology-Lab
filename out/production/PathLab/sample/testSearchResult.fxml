@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.testSearchResultController">
+   <children>
+      <TableView fx:id="testResultTable" layoutY="70.0" prefHeight="442.0" prefWidth="800.0">
+        <columns>
+          <TableColumn fx:id="testId" prefWidth="122.39999389648438" text="Test Id" />
+          <TableColumn fx:id="testName" prefWidth="152.0" text="Test Name" />
+            <TableColumn fx:id="testAmount" prefWidth="136.79998779296875" text="Amount" />
+            <TableColumn fx:id="collAvailability" prefWidth="158.39996337890625" text="Collector Availability" />
+            <TableColumn fx:id="description" prefWidth="230.40008544921875" text="Description" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backOnAction" text="BACK" />
+      <Button layoutX="360.0" layoutY="532.0" mnemonicParsing="false" onAction="#selectTestOnAction" prefHeight="26.0" prefWidth="88.0" text="Select" />
+   </children>
+</AnchorPane>

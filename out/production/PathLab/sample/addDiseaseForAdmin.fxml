@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.addSampleOrganDiseaseController">
+   <children>
+      <Label layoutX="166.0" layoutY="193.0" text="Disease Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="347.0" layoutY="375.0" mnemonicParsing="false" onAction="#diseaseAddOnAction" text="ADD Disease">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="52.0" layoutY="48.0" mnemonicParsing="false" onAction="#diseaseBackOnAction" text="BACK">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <TextField fx:id="diseaseName" alignment="CENTER" layoutX="307.0" layoutY="193.0" prefHeight="30.0" prefWidth="200.0" />
+      <Label fx:id="diseaseExist" layoutX="557.0" layoutY="194.0" prefHeight="24.0" prefWidth="216.0" textFill="#ea1313" />
+   </children>
+</AnchorPane>

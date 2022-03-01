@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.collectorPageController">
+   <children>
+      <Button layoutX="699.0" layoutY="41.0" mnemonicParsing="false" onAction="#offlineButtonOnAction" text="OFFLINE" />
+      <Button layoutX="609.0" layoutY="41.0" mnemonicParsing="false" onAction="#onlineButtonOnAction" text="ONLINE" />
+      <Label fx:id="activityLabel" layoutX="614.0" layoutY="84.0" prefHeight="26.0" prefWidth="132.0" textFill="#191817">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="244.0" layoutY="213.0" mnemonicParsing="false" onAction="#takenJobOnAction" prefHeight="26.0" prefWidth="122.0" text="Taken Jobs">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="244.0" layoutY="254.0" mnemonicParsing="false" onAction="#completedJobOnAction" prefHeight="26.0" prefWidth="122.0" text="Completed Jobs">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="318.0" layoutY="435.0" mnemonicParsing="false" onAction="#logoutOnAction" prefHeight="34.0" prefWidth="122.0" text="LOGOUT" />
+      <ComboBox fx:id="availableJobComboBox" layoutX="386.0" layoutY="139.0" onAction="#availableJobComboBoxOnAction" prefHeight="30.0" prefWidth="150.0" promptText="Avalilable Jobs" />
+      <Label layoutX="247.0" layoutY="144.0" text="Available Packages">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
